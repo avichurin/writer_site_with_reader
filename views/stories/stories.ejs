@@ -1,0 +1,37 @@
+<%- include ../layout/bookheader.ejs -%>
+<div id="container" class="container">
+    <div class="menu-panel">
+        <h3>Содержание</h3>
+        <ul id="menu-toc" class="menu-toc">
+            <% for(let i=0; i<chapters.length; i++){%>
+                <li class="menu-toc-current"><a><%= chapters[i].fileName%></a></li>
+            <%}%>
+        </ul>
+        <div>
+            <a href="/stories">&larr; К выбору категории</a>
+            <a href="/index">&larr; Вернуться на главную</a>
+        </div>
+    </div>
+    <div class="bb-custom-wrapper">
+        <div id="bb-bookblock" class="bb-bookblock">
+            <% for(let i=0; i<chapters.length; i++){%>
+                <div class="bb-item" id="<%= chapters[i].id %>">
+                    <div class="content">
+                        <div class="scroller">
+                            <h2><%= chapters[i].fileName%></h2>
+                            <pre class="pre-line"><p><%= chapters[i].content %></p></pre>
+                        </div>
+                    </div>
+                </div>
+            <%}%>
+        </div>
+        <nav>
+            <span id="bb-nav-prev">&larr;</span>
+            <span id="bb-nav-next">&rarr;</span>
+        </nav>
+
+        <span id="tblcontents" class="menu-button">Содержание</span>
+
+    </div>
+</div><!-- /container -->
+<%- include ../layout/bookfooter.ejs -%>

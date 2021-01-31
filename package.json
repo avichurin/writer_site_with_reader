@@ -1,0 +1,21 @@
+{
+  "name": "vichurin",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/debug-agent": "^3.2.0",
+    "dotenv": "^6.2.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "jquery": "^3.4.1",
+    "word-extractor": "^0.3.0"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  }
+}

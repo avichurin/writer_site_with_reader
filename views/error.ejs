@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="../public/images/favicon.ico">
+    <link rel="stylesheet" href="../public/stylesheets/404.css">
+    <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+    <title>
+        <%= error.status %>
+    </title>
+</head>
+<body class="demo-2  render">
+<main>
+    <div class="content">
+        <div class="glitch">
+            <div class="glitch__img"></div>
+            <div class="glitch__img"></div>
+            <div class="glitch__img"></div>
+            <div class="glitch__img"></div>
+            <div class="glitch__img"></div>
+        </div>
+        <h2 class="content__title_1"><%= error.status %></h2>
+
+        <h3 class="content__title_2"><%= message %></h3>
+    </div>
+</main>
+<script src="../public/javascripts/imagesloaded.pkgd.min.js"></script>
+<script src="../public/javascripts/glitch.js"></script>;
+</body>
+</html>
