@@ -6,6 +6,9 @@ const fs = require('fs');
 const config = require('./config');
 const app = express();
 app.use('/public', express.static('public'));
+
+const PORT = process.env.PORT || config.PORT;
+
 app.use(
     '/javascripts',
     express.static(path.join(__dirname, 'node_modules', 'jquery'))
@@ -352,8 +355,8 @@ app.use((error, req, res, next) => {
         error: !config.IS_PRODUCTION ? error : {}
     });
 });
-app.listen(8080, () =>
-    console.log(`Example app listening on port ${config.PORT}!`)
+app.listen(PORT, () =>
+    console.log(`Example app listening on port ${PORT}!`)
 );
 
 module.exports = app;
