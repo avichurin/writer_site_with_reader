@@ -36,7 +36,6 @@ ul {
     position: fixed;
     right: 0;
     top: 0;
-    height: 100vh;
     width: 100vw;
     transform: translate(100vw, 0);
     z-index: 9000;
@@ -48,7 +47,7 @@ ul {
     transition: width 475ms ease-out, transform 450ms ease, border-radius .8s .1s ease;
     border-bottom-left-radius: 100vw;
     background-color: #3d88ce;
-    background-color: rgba(12, 106, 194, 0.9);
+    background-color: rgba(40, 59, 206, 0.9);
 }
 .drawer-list ul {
     height: 100%;
@@ -89,7 +88,7 @@ ul {
 .drawer-list li a:hover {
     cursor: pointer;
     background-color: #88c2f8;
-    background-color: rgba(17, 132, 240, 0.5);
+    background-color: rgba(40, 59, 206, 0.9);
 }
 
 input.hamburger {

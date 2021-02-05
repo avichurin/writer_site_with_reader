@@ -45,14 +45,14 @@ button:focus {
 	--color-main-text: #57585c;
 	--color-scroll-text: #efedeb;
 	--font-scroll-text: 'Roboto Mono', monospace;
-	--fontsize-scroll-text: 8vw;
+	--fontsize-scroll-text: 9vw;
 }
 
 .content-main {
 	color: var(--color-main-text);
 }
 .invite{
-	font-size: 6vw !important;
+	font-size: 9vw !important;
 }
 .js .content-text::before {
 	content: '';
@@ -180,7 +180,7 @@ a.start-link-preview {
 
 .content-section:first-child,
 .content-section:last-child {
-	height: 65vh;
+	height: 57vh;
 	text-align: left;
 }
 
@@ -203,7 +203,7 @@ a.start-link-preview {
 .index-img {
 	position: relative;
 	display: block;
-	max-width: 90%;
+	max-width: 100%;
 	margin: 0 5% 0 auto;
 	width: 550px;
 }
@@ -286,14 +286,6 @@ a.start-link-preview {
 		bottom: auto;
 		right: auto;
 		margin: 0;
-	}
-	.content-section:first-child, 
-	.content-section:last-child {
-		height: calc(100vh - 13.875em);
-	}
-	.content-main, 
-	.contact {
-		bottom: calc(var(--fontsize-scroll-text) * 1.5 + 15vh);
 	}
 	.copyright{
 	    width: 100%;
