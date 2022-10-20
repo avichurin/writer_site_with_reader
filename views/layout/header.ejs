@@ -1,38 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>DreamWord ArtStudio</title>
-    <link rel="shortcut icon" href="../../public/images/favicon.ico">
+    <link rel="shortcut icon" href="../../public/images/favicon.ico" />
     <%-cssLink%>
-</head>
-<body class="main first">
-<div class="mobile-menu">
-    <input id="hamburger" class="hamburger" type="checkbox"/>
-    <label class="hamburger" for="hamburger">
+  </head>
+  <body class="main first">
+    <div class="mobile-menu">
+      <input id="hamburger" class="hamburger" type="checkbox" />
+      <label class="hamburger" for="hamburger">
         <i></i>
-    </label>
-    <section class="drawer-list">
+      </label>
+      <section class="drawer-list">
         <ul>
-            <li><a href="/index">#мастерская</a></li>
-            <li><a href="/novels">#романы</a></li>
-            <li><a href="/stories">#рассказы</a></li>
-            <li><a href="/poems">#стихи</a></li>
-            <li><a href="song_text">#тексты песен</a></li>
-            <li><a href="song_videos">#клипы</a></li>
+          <li><a href="/index">#мастерская</a></li>
+          <li><a href="/novels">#романы</a></li>
+          <li><a href="/stories">#рассказы</a></li>
+          <li><a href="/poems">#стихи</a></li>
+          <li><a href="song_text">#тексты песен</a></li>
         </ul>
-    </section>
-</div>
+      </section>
+    </div>
     <header class="header-index">
-        <h1 class="header-index-title">АртСтудия А.Вичурина</h1>
-        <nav class="start">
-            <a class="start-link <%if (~path.indexOf('index')) { %> start-link-preview <% } %>" href="/index"><span>#Мастерская</span></a>
-            <a class="start-link <%if (~path.indexOf('novels')) { %> start-link-preview <% } %>" href="/novels"><span>#Романы</span></a>
-            <a class="start-link <%if (~path.indexOf('stories')) { %> start-link-preview <% } %>" href="/stories"><span>#Рассказы</span></a>
-            <a class="start-link <%if (~path.indexOf('poems')) { %> start-link-preview <% } %>" href="/poems"><span>#Стихи</span></a>
-            <a class="start-link <%if (~path.indexOf('song_text')) { %> start-link-preview <% } %>" href="/song_text"><span>#Тексты песен</span></a>
-            <a class="start-link <%if (~path.indexOf('song_videos')) { %> start-link-preview <% } %>" href="/song_videos"><span>#Клипы</span></a>
-        </nav>
+      <h1 class="header-index-title">АртСтудия А.Вичурина</h1>
+      <nav class="start">
+        <a
+          class="start-link <%if (~path.indexOf('index')) { %> start-link-preview <% } %>"
+          href="/index"
+          ><span>#Мастерская</span></a
+        >
+        <a
+          class="start-link <%if (~path.indexOf('novels')) { %> start-link-preview <% } %>"
+          href="/novels"
+          ><span>#Романы</span></a
+        >
+        <a
+          class="start-link <%if (~path.indexOf('stories')) { %> start-link-preview <% } %>"
+          href="/stories"
+          ><span>#Рассказы</span></a
+        >
+        <a
+          class="start-link <%if (~path.indexOf('poems')) { %> start-link-preview <% } %>"
+          href="/poems"
+          ><span>#Стихи</span></a
+        >
+        <a
+          class="start-link <%if (~path.indexOf('song_text')) { %> start-link-preview <% } %>"
+          href="/song_text"
+          ><span>#Тексты песен</span></a
+        >
+      </nav>
     </header>
-    <p class="info">Связаться с автором <a href="mailto:vichurin@meta.ua?subject=Тема&amp;body=Здравствуйте!"> vichurin@meta.ua</a></p>
+    <p class="info">
+      Связаться с автором
+      <a href="mailto:vichurin@meta.ua?subject=Тема&amp;body=Здравствуйте!">
+        vichurin@meta.ua</a
+      >
+    </p>
+  </body>
+</html>
