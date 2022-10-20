@@ -222,7 +222,7 @@ a.start-link-preview {
 .content-main,
 .contact {
   position: absolute;
-  bottom: calc(var(--fontsize-scroll-text) + 2.5vmax);
+  bottom: calc(var(--fontsize-scroll-text) + 3vmax);
 }
 
 .content-main span {
